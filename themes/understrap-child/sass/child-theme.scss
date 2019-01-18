@@ -1,0 +1,88 @@
+@import "theme/child_theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap4";// <--------- Loads Bootstrap3 or Bootstrap4. Change from /bootstrap3 to /bootstrap4 Watch out! just for testing in the moment!
+@import "../src/sass/understrap/understrap/understrap";// <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "../src/sass/understrap/theme/contact-form7";// <-------- Loads some basic styling for contact form 7 plugin
+
+//Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome"; // <------- Font Awesome Icon font
+@import "assets/underscores"; // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/child_theme";  // <--------- Add your styles into this file
+
+body {
+    padding-top: 108px;
+}
+
+#wrapper-navbar {
+    top: 0;
+    position: fixed; 
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+    
+.custom-logo-link img {
+    width: 300px;
+}
+
+.navbar.bg-primary {
+	background-color: #fff !important;
+    font-family: 'Sintony', sans-serif;
+    border-bottom: 4px solid #639c3d;
+}
+
+.navbar-nav .nav-link {
+	font-family: 'Sintony', sans-serif;
+    color: #194189 !important;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .cta {
+    border-radius: 5px;
+    border: 0px solid white;
+}
+
+.navbar-dark .navbar-nav .cta .nav-link {
+    color: #fff !important;
+    border-radius: 5px;
+    border: 0 solid #fff;
+}
+
+li.cta a  {
+	background-color: #639c3d;
+	text-align: center;
+    border: 0 solid #fff;
+    width: 150px;
+    padding: 7px 25px;
+    margin-left: 25px;
+}
+
+#wrapper-footer {
+    background-color: #194189;
+    color :#fff;
+}
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 1000px) {
+
+    .custom-logo-link img {
+        width: 200px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: .8rem;
+    }
+}
+
+  @media screen and (max-width: 1000px) {
+    .custom-logo-link img {
+        width: 300px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+}
